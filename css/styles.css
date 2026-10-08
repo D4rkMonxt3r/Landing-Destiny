@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+
+/*
+    Paleta de colores:
+    Fondo oscuro:     #0d1117
+    Fondo tarjetas:   #161b22
+    Dorado:           #c9a227
+    Azul:             #3b82f6
+    Texto:            #f5f5f5
+    Texto secundario: #b0b8c4
+    Bordes:           #30363d
+
+    Tipografías: Oswald (títulos) y Mulish (texto)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d1117;
+    color: #f5f5f5;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #0d1117;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    position: fixed;
+}
+
+.logo {
+    width: 40px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.1rem;
+    font-family: "Oswald", sans-serif;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #3b82f6;
+}
+
+.navbar ul li a.active {
+    color: #c9a227;
+}
+
+/* Portada */
+.container {
+    background-image: url('https://res.cloudinary.com/rlu9brce/image/upload/v1791248887/D2_Evergreen_Key-Art_Crops_JB_3840x2160.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container h1 {
+    font-size: 4.5rem;
+    font-family: "Oswald", sans-serif;
+    color: #c9a227;
+}
+
+.container h2 {
+    font-size: 1.8rem;
+    font-family: "Mulish", sans-serif;
+    color: #f5f5f5;
+    margin-bottom: 1.5rem;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    background-color: #c9a227;
+    color: #0d1117;
+    border: none;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3b82f6;
+    color: #f5f5f5;
+}
+
+/* Tarjetas */
+.cards-section {
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+}
+
+.cards-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #161b22;
+    border-radius: 10px;
+    width: 320px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.card-content p {
+    font-family: "Mulish", sans-serif;
+    color: #b0b8c4;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.card-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #c9a227;
+    color: #0d1117;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #3b82f6;
+    color: #f5f5f5;
+}
+
+.tag {
+    display: inline-block;
+    font-family: "Mulish", sans-serif;
+    font-size: 0.8rem;
+    color: #c9a227;
+    border: 1px solid #c9a227;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+
+/* Páginas de cada historia */
+.story-hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+/* Imagen de cada historia */
+.story-red-war {
+    background-image: url('https://res.cloudinary.com/rlu9brce/image/upload/v1791426559/Db_012_liberation_sketch.jpg');
+    background-position: center top;
+}
+
+.story-cayde {
+    background-image: url('https://res.cloudinary.com/rlu9brce/image/upload/v1791424228/wallpaperflare.com_wallpaper.jpg');
+    background-position: center top;
+}
+
+.story-savathun {
+    background-image: url('https://res.cloudinary.com/rlu9brce/image/upload/v1790994433/Witch_Queen-Deluxe_Art_4k.jpg');
+}
+
+.story-witness {
+    background-image: url('https://res.cloudinary.com/rlu9brce/image/upload/v1791424413/destiny-2-lightfall-dlc-uhd-4k-wallpaper.jpg');
+    background-position: center top;
+}
+
+.story-final-shape {
+    background-image: url('https://res.cloudinary.com/rlu9brce/image/upload/v1791426693/final-shape-battle1920.webp');
+    background-position: center top;
+}
+
+.story-text {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+}
+
+.story-header {
+    text-align: center;
+}
+
+.story-text h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    color: #c9a227;
+    margin-top: 0.8rem;
+}
+
+.story-text h2 {
+    font-family: "Mulish", sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.story-text p {
+    font-family: "Mulish", sans-serif;
+    color: #b0b8c4;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Página de suscripción */
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 8rem 1.5rem 4rem;
+}
+
+.page-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    color: #c9a227;
+    text-align: center;
+}
+
+.page-intro {
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    color: #b0b8c4;
+    margin-bottom: 3rem;
+}
+
+/* Formulario */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #161b22;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form label {
+    font-family: "Oswald", sans-serif;
+}
+
+.form input,
+.form select {
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: #f5f5f5;
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-family: "Mulish", sans-serif;
+    color: #b0b8c4;
+    font-size: 0.9rem;
+}
+
+/* Celular */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .container h1 {
+        font-size: 2.8rem;
+    }
+
+    .container h2 {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .cards-section {
+        padding-top: 9rem;
+    }
+
+    .page {
+        padding-top: 11rem;
+    }
+
+    .story-hero {
+        height: 40vh;
+    }
+
+    .story-text h1 {
+        font-size: 2.3rem;
+    }
+}
